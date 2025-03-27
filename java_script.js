@@ -12,8 +12,6 @@ function getComputerChoice() {
 }
 
 function playGame() {
-  const compSelect = document.querySelector("#compSelect");
-  const usrSelect = document.querySelector("#usrSelect");
   usrPaper.addEventListener("click", () => {
     usrChoice = "paper";
     let computerSelection = getComputerChoice();
@@ -30,7 +28,6 @@ function playGame() {
     playRound(usrChoice, computerSelection);
   });
 }
-playGame();
 
 function playRound(humanChoice, computerChoice) {
   const currentCondition = document.querySelector("#currentCondition");
@@ -79,3 +76,5 @@ function playRound(humanChoice, computerChoice) {
   compSelect.textContent += computerChoice;
   usrSelect.textContent += humanChoice;
 }
+
+playGame();
