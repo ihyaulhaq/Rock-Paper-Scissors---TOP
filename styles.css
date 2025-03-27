@@ -1,0 +1,15 @@
+*{
+    text-align: center;
+}
+.display-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}

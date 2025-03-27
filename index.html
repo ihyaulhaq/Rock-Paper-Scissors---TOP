@@ -4,11 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <h1>Rock Paper Scissors Game</h1>
 
-    <button onclick="playGame()">PLAY !!</button>
+    <!-- <button id="playButton">PLAY !!</button> -->
+
+    <div class="display-info">
+      <div>
+        <p id="usrScoreTxt">your score is</p>
+        <p id="usrSelect">you</p>
+      </div>
+      <p id="currentCondition">currently</p>
+
+      <div>
+        <p id="compScoreTxt">computer score is</p>
+        <p id="compSelect">computer</p>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <button id="scissorsBtn">SCISSOR !!</button>
+      <button id="paperBtn">PAPER !!</button>
+      <button id="rockBtn">ROCK !!</button>
+    </div>
 
     <script src="java_script.js"></script>
   </body>
